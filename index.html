@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wedding Invite</title>
+    <meta name="description"
+    content="In the name of ALLAH, The Most Benificient, The Most Merciful">
+ <meta name="author" content="Mohammed Adil A">
+ <meta name="email" content="asifm2907@gmail.com">
+ <meta name="copyright" content="Mohammed Adil A" />
+ <meta content="width=device-width, initial-scale=1" name="viewport" />
+ <meta property="og:type" content="Wedding Website" >
+ <meta property="og:title" content="Wedding Invitation | 5th January" >
+ <meta property="og:description"
+    content="Inviting you to Mohammed Adil's wedding to be held on 5th January." />
+    <meta property="og:image:type" content="image/jpeg" />
+      <meta property="og:image:width" content="200">
+      <meta property="og:image:height" content="200">
+    <!-- Bulma Version 0.8.x-->
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/menikah.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.countdown.css" />
+    <script
+      src="https://kit.fontawesome.com/2828f7885a.js"
+      integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
+      crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/jquery.coundown.js"></script>
+    <link rel="icon" type="image/png" href="image/parrot.gif" />
+  </head>
+
+  <body>
+    <!-- Begin Preloader -->
+    <div class="preloader-wrapper">
+      <div class="preloader">
+        <img src="image/parrot.gif" alt="Party Parrot Gif" />
+      </div>
+    </div>
+    <!-- End Preloader-->
+
+    <!-- Begin Header -->
+    <div class="header-wrapper" id="home">
+      <!-- Begin Hero -->
+      <section class="hero is-large">
+        <!-- Begin Mobile Nav -->
+        <nav class="navbar is-transparent is-hidden-desktop">
+          <!-- Begin Burger Menu -->
+          <div class="navbar-brand">
+            <div class="navbar-burger burger" data-target="mobile-nav">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <!-- End Burger Menu -->
+          <div id="mobile-nav" class="navbar-menu">
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <a class="navbar-item" href="#Waktu">
+                  Time
+                </a>
+              </div>
+              <div class="navbar-item">
+                <a class="navbar-item" href="#lokasi">
+                  Location
+                </a>
+              </div>
+              
+              <div class="navbar-item">
+                <a class="navbar-item" href="#tentang-sherly-daeng">
+                  Mohammed Adil A
+                </a>
+              </div>
+              <div class="navbar-item">
+                <a class="navbar-item" href="#rsvp">
+                  RSVP
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- End Mobile Nav -->
+        <!-- Begin Hero Content-->
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <h1 class="subtitle">Wedding Invitation</h1>
+            <h2 class="title">Adil with Abida </h2>
+            <h4 class="subtitle tempatTime">
+              
+                Friday, 01 January 2024 
+                </br>
+                (Hijri 1445, Jammadul Akhir 22nd)
+                <br>
+                <br>
+                VENUE: Royal Convention Centre, Mysuru.
+              
+            </h4>
+          </div>
+
+          <!-- Start Countdown -->       
+          <p id="demo"></p>
+          
+          <script>
+          // Set the date we're counting down to
+          var countDownDate = new Date("Jan 5, 2024 17:00:00").getTime();
+          
+          // Update the count down every 1 second
+          var x = setInterval(function() {
+          
+            // Get today's date and time
+            var now = new Date().getTime();
+              
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+              
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+              
+            // Output the result in an element with id="demo"
+            document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+              
+            // If the count down is over, write some text 
+            if (distance < 0) {
+              clearInterval(x);
+              document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+          }, 1000);
+          </script>
+  
+          <!-- End Countdown -->
+        </div>
+        <!-- End Hero Content-->
+
+
+        <!-- Begin Hero Menu -->
+        <div class="hero-foot ">
+          <div class="hero-foot--wrapper">
+            <div class="columns">
+              <div class="column is-12 hero-menu-desktop has-text-centered">
+                <ul>
+                  <li class="is-active">
+                    <a href="#home">Home</a>
+                  </li>
+                  <li>
+                    <a href="#Hari">Time</a>
+                  </li>
+                  <li>
+                    <a href="#Location">Location</a>
+                  </li>
+                  <li>
+                    <a href="#tentang-sherly-daeng">Mohammed Adil A</a>
+                  </li>
+                  <li>
+                    <a href="#rsvp">WhatsApp</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Hero Menu -->
+      </section>
+      <!-- End Hero -->
+    </div>
+    <!-- End Header -->
+
+    <!-- Begin Main Content -->
+    <div class="main-content">
+
+      
+      <!-- Begin regular-section-->
+      <div class="section-light regular-section has-text-centered has-vertically-aligned-content" id="regular-section">
+        
+        <p class="bodytext" data-aos="fade-in" data-aos-easing="linear">
+          <strong>اَلسَلامُ عَلَيْكُم وَرَحْمَةُ اَللهِ وَبَرَكاتُهُ</strong><br>(Peace be upon you and God's mercy and blessings).
+          <br /> <br>
+          By asking for the mercy and blessing of Allah SWT, 
+          <br />
+          We intend to invite you to our wedding
+        </p>
+        <div data-aos="fade-in" data-aos-easing="linear">
+          <div class="nama-lengkap" >
+            Mohammed Adil A
+          </div>
+          First Son of Mrs. & Mr. K.A Ameenulla
+            <div class="ampersand">&</div>
+            <div class="nama-lengkap">
+              Noorul Abida A
+            </div>
+            First Daugther of Mrs. & Mr. K.M Ayub Khan
+          </div>
+        </div>
+       
+      <!-- End regular-section-->    
+            <!-- Begin Time Section -->
+            <div class="section-dark" id="Waktu">
+              <div class="container">
+                <div class="column is-12 regular-section">
+                  <h1 class="title has-text-centered section-title"><u>Time:</u></h1>
+                </div>
+                <div class="columns is-multiline">
+                  <div
+                    class="column is-4 has-vertically-aligned-content"
+                    data-aos="fade-right"
+                  >
+                  
+                    <p class="is-larger has-text-centered">
+                        <div class="waktu tanggal-hari has-text-centered">Friday</div> 
+                        <div class="waktu tanggal-angka has-text-centered">05</div>
+                        <div class="waktu tanggal-bulan has-text-centered">January 2024</div>
+                    </p>
+                  
+                  </div>
+                  <div
+                    class="column is-4 has-vertically-aligned-content"
+                    data-aos="fade-in" data-aos-easing="linear"
+                  >
+                  
+                    <p class="waktu is-larger has-text-centered">
+                      Nikah:
+                      <br>
+                      <strong>After Asr Prayer</strong>
+                    </p>
+                  
+                  </div>
+
+                  <div
+                    class="column is-4 has-vertically-aligned-content"
+                    data-aos="fade-left">
+                    
+                    <h1 class="waktu is-larger has-text-centered">
+                      Valima(Reception):
+                      <br>
+                      <strong>7:00 PM Onwards</strong>
+                    </h1>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+      <!-- End Time Content -->
+
+            <!-- Begin Location Section -->
+            <div class="section-light" id="Location" data-aos="fade-in" data-aos-easing="linear" >
+              <div class="container">
+                <div class="column is-12 regular-section">
+                  <h1 class="title has-text-centered section-title"><u>Venue Location:</u></h1>
+                  <p class="tempat is-larger has-text-centered">
+                    <strong>ROYAL CONVENTION CENTRE</strong>
+                    <br>
+                    Opposite Siddiqia Arabic College,
+                    <br>
+                    Mysore-Bangalore Road, Mysuru, 570019
+                    <br>
+                  </p>
+                </div>
+                <div class="section-map">
+                  <a href="https://www.google.com/maps/place/Royal+Convention+Centre/@12.3456684,76.6537856,18z/data=!4m10!1m2!2m1!1sRoyal+Conevntion+Centre!3m6!1s0x3baf71b2c8e6869f:0xed1e0ac9f3eb4712!8m2!3d12.3455803!4d76.6560326!15sChdSb3lhbCBDb252ZW50aW9uIENlbnRyZVoZIhdyb3lhbCBjb252ZW50aW9uIGNlbnRyZZIBEWNvbnZlbnRpb25fY2VudGVymgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVU5zYjFwUWNWQjNFQUXgAQA!16s%2Fg%2F11vkn1phyr?entry=ttu"> <img src ="image/map.jpg" alt="location" width="200px" height="200px"></a>
+                </div>
+                <div class="has-text-centered">
+                  <a href="https://www.google.com/maps/place/Royal+Convention+Centre/@12.3456684,76.6537856,18z/data=!4m10!1m2!2m1!1sRoyal+Conevntion+Centre!3m6!1s0x3baf71b2c8e6869f:0xed1e0ac9f3eb4712!8m2!3d12.3455803!4d76.6560326!15sChdSb3lhbCBDb252ZW50aW9uIENlbnRyZVoZIhdyb3lhbCBjb252ZW50aW9uIGNlbnRyZZIBEWNvbnZlbnRpb25fY2VudGVymgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVU5zYjFwUWNWQjNFQUXgAQA!16s%2Fg%2F11vkn1phyr?entry=ttu" class="button btn-arah" data-aos="fade-right">
+                    <i class="far fa-directions"></i>
+                    &nbsp;&nbsp;Directions
+                  </a>
+                </div>
+              </div>
+            </div>
+      <!-- End Location Content -->
+
+               <!-- Begin Tentang Sherly and Daeng -->
+      <div class="section-light regular-section" id="tentang-sherly-daeng">
+        <div class="container">
+          <div class="column is-12 prolog">
+            <h1 class="title has-text-centered section-title"><u>Mohammed Adil A</u></h1>
+          </div>
+          
+          <div class="columns">
+            <div class="column is-6">
+              <strong>Mohammed Adil A</strong> (B.B.M)<br>
+              <div class="columns-1">
+                Paternal Grand S/o <strong>Late K.A Abdul Azeez Saheb </strong><br>
+                Maternal Grand S/o <strong>Late V.P Ummer Saheb </strong><br> <br>
+                S/o Mrs & Mr <strong>K.A Ameenulla</strong> <br>
+                (Scrap Merchant, Santhepet, Mysore)
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+      <!-- End Tentang Sherly dan Daeng -->
+
+      <!-- Begin RSVP Content -->
+      <div class="section-dark contact" id="rsvp">
+        <div class="container">
+          <div
+            class="columns is-multiline"
+            data-aos="fade-in-up"
+            data-aos-easing="linear"
+          >
+            <div class="column is-12 prolog">
+              <h1 class="title has-text-centered section-title"><u>Confirmation Of Attendance</u></h1>
+              <h6 class="demo1">(Click on the below icon to send us your response)</h6>
+            </div>
+            <div class="column is-12 prolog has-text-centered">
+                    <a href="https://api.whatsapp.com/send?phone=918867176393&text=Hello%20Adil,%20Thanks%20for%20the%20invite,%20I'll%20be%20attending%20the%20wedding&source=&data=" class="button btn-whatsapp" data-aos="fade-right">
+                      <i class="fab fa-whatsapp"></i>
+                      &nbsp;&nbsp;Mohammed Adil A
+                    </a>
+                    <h6 class="demo2">Memorable will be those moments if you could make your presence<br>
+                      on the magnimous occasion of my marriage ceremony. <br> <br>
+                      💜Baarakallaahu Laka Wa Baaraka Alaika Wa Jama-a-Bainakumaa Fee Khairin💜</h6>
+            </div>
+ 
+         </div>
+        </div>
+      </div>
+      <!-- End RSVP Content -->
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Begin Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="music">
+        <p class="has-vertically-align">2023-24 &copy SHIFU <br>
+          <a href="index.html">Back to Top </a></p>
+            <audio loop autoplay>
+              <source src ="Music/A-Thousand-Years.mp3" style="display: none;" type="audio/mp3"></audio>
+              <!-- <audio src="./asset/mp3/song.mp3" id="my_audio" loop="loop"></audio>  -->
+      </div>
+    </div>
+    <!-- End Footer -->
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/menikah.js"></script>
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: "ease-out",
+        duration: 800,
+      });
+    </script>
+  </body>
+</html>
